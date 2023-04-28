@@ -1,0 +1,15 @@
+li {
+  list-style: none;
+  text-align: center;
+  width: 350px;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  img {
+    width: 140px;
+    height: 200px;
+  }
+}
