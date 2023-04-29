@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  height: auto;
+  padding: 10px 100px;
+  background-color: #4d1771;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
