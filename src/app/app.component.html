@@ -1,8 +1,13 @@
 <div class="header">
   <a routerLink="/">Book Shop</a>
   <a routerLink="/carts">My Cart</a>
-  <a routerLink="/login">Login</a>
-  <a routerLink="/register">Register</a>
+  <ng-container *ngIf="!isAuthenticated()">
+    <a routerLink="/login">Login</a>
+    <a routerLink="/register">Register</a>
+  </ng-container>
+  <ng-container *ngIf="isAuthenticated()">
+    <button>Logout</button>
+  </ng-container>
 </div>
 <div class="container">
   <router-outlet></router-outlet>

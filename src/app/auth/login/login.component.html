@@ -27,10 +27,10 @@
     </div>
 
     <button type="submit" [disabled]="myForm.form.invalid" class="sbmt">
-      <ng-container *ngIf="isLoading">
+      <ng-container *ngIf="isLoading()">
         Loading...
       </ng-container>
-      <ng-container *ngIf="!isLoading">
+      <ng-container *ngIf="!isLoading()">
         Submit
       </ng-container>
     </button>
