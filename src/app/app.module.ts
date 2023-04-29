@@ -9,6 +9,7 @@ import { BooksService } from './books/books.service';
 import { BooksModule } from './books/books.module';
 import { CartComponent } from './cart/cart.component';
 import { HeaderComponent } from './header/header.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,8 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    BooksModule
+    BooksModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

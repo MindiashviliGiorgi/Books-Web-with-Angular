@@ -1,0 +1,62 @@
+.login-main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 12px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0px 50px;
+    .email-validation,
+    .password-validation {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      background-color: #ff6b6b;
+      padding: 4px 10px;
+      color: #800f0f;
+      border-radius: 4px;
+    }
+    .sbmt {
+      font-size: 17px;
+      padding: 4px 15px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    .email-box,
+    .password-box {
+      width: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      input {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        padding: 5px 10px;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        color: #000;
+      }
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}
